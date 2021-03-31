@@ -15,4 +15,10 @@ public class HelloWorldController {
 
         return "I'm Sri Lankan But We can not express my ideas about the current situation of sri lanka fuck off ";
     }
+
+    @GetMapping(value = "/hello2")
+    public String hello2(){
+
+        return "Fucker Gota";
+    }
 }
