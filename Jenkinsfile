@@ -4,7 +4,7 @@ pipeline{
         stage('Build'){
             steps{
              bat   'mvn clean package'
-             bat "docker build . -t appx:/usr/local/"
+             bat "docker build . -t appx
             }
         }
     }
