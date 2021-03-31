@@ -4,7 +4,7 @@ pipeline{
         stage('Build'){
             steps{
              bat   'mvn clean package'
-             bat "docker build . -t gihan: -f DockerFile"
+             bat "docker build -t fuck:${env.BUILD_ID} -f DockerFile ."
             }
         }
     }
